@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico?">
+    <title>Staden Bangkok</title>
+</head>
+
+<body>
+
+    <hr>
+    <nav>
+        <!-- meny för navigering mellan sidor -->
+        <a href="index.html">Start</a> |
+        <a href="city_page.html">Läs om Bangkok</a> |
+        <a href="media.html">Media</a> |
+        <a href="event.html">Defqon 1 Anmälan</a>
+    </nav>
+    <hr>
+
+    <h1>En bild på Bangkok med klickbara objekt</h1>
+    <main>
+        <figure>
+            <img src="images/bangkok.jpeg" alt="Stor bild på Bangkok" usemap="#bangkok">
+        </figure>
+        <map name="bangkok">
+            <area href="https://en.wikipedia.org/wiki/Asiatique" alt="Asiatique" target="_blank" shape="circle"
+                coords="645,455,73" title="Asiatique">
+            <area href="https://sv.wikipedia.org/wiki/Chao_Phraya" alt="Chao Phraya" target="_blank" shape="poly"
+                coords="225,334,314,334,419,356,478,388,281,668,0,668,0,435,257,364,225,334" title="Chao Phraya">
+            <area href="https://en.wikipedia.org/wiki/Lebua_at_State_Tower" alt="Lebua at State Tower" target="_blank"
+                shape="poly"
+                coords="389,209,397,216,403,225,415,226,415,317,383,317,383,289,380,285,367,283,367,260,373,227,380,223,382,215,389,209"
+                title="Lebua at State Tower">
+        </map>
+        <section>
+            <h2>Instruktioner till klickbara objekt</h2>
+            <ul>
+                <li>Tryck på floden för att läsa om Chao Phraya</li>
+                <li>Tryck på pariserhjulet för att läsa om Asiatique</li>
+                <li>Tryck på hotellet med guldkupolen för att läsa om Lebua at State Tower</li>
+            </ul>
+        </section>
+        <p>
+            Tillbaka till <a href="city_page.html">Läs om Bangkok</a>
+        </p>
+
+
+    </main>
+
+    <hr>
+    <!-- längst ner på varje sida ska ditt namn finnas omslutet av lämpligt html element -->
+    <footer>&copy; 2024 Daniel Thörnsjö</footer>
+
+
+</body>
+
+</html>

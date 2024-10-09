@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico?">
+    <title>Media</title>
+</head>
+
+<body>
+
+    <hr>
+    <nav>
+        <!-- meny för navigering mellan sidor -->
+        <a href="index.html">Start</a> |
+        <a href="city_page.html">Läs om Bangkok</a> |
+        <a href="media.html">Media</a> |
+        <a href="event.html">Defqon 1 Anmälan</a>
+    </nav>
+    <hr>
+
+    <main>
+        <!-- sidans innehåll -->
+        <h1>Media</h1>
+
+        <!-- w3c validator klagar på dubbla figcaptions i figure -->
+        <!-- Tog bort figcaption nummer 2 och satte radbrytning -->
+        <figure>
+            <figcaption>En hemmamatch för Färjestad</figcaption>
+            <img src="images/farjestad.jpg" alt="Färjestad hemmamatch" width="300">
+            <br>
+            <a href="https://commons.wikimedia.org/wiki/file:Seareiros_do_F%C3%A4rjestad_BK.jpg" target="_blank">Bene
+                Riobó</a>,
+            <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>, via Wikimedia
+            Commons
+        </figure>
+
+        <figure>
+            <figcaption>F1 - Lewis Hamilton | Still Rising</figcaption>
+            <iframe
+                src="https://player.vimeo.com/video/479934033?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                width="300" height="169" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                title="F1 - Lewis Hamilton | Still Rising">
+            </iframe>
+            <br>
+            <a href="https://vimeo.com/479934033" target="_blank">F1 - Lewis Hamilton | Still Rising</a>, via Vimeo
+        </figure>
+
+        <figure>
+            <figcaption>Ducati Scrambler</figcaption>
+            <video src="https://upload.wikimedia.org/wikipedia/commons/7/7b/The_Land_of_Joy.webm" controls
+                width="300"></video>
+            <br>
+            <a href="https://commons.wikimedia.org/wiki/File:The_Land_of_Joy.webm" target="_blank">Scrambler Ducati</a>,
+            <a href="https://creativecommons.org/licenses/by/3.0" target="_blank">CC BY 3.0</a>, via Wikimedia Commons
+        </figure>
+
+        <figure>
+            <figcaption>Mercedes-Benz SLS AMG</figcaption>
+            <!-- Audio verkar ej fungera i Safari, oklart varför -->
+            <audio src="audios/mercedes.ogg" controls></audio>
+            <br>
+            <a href="https://commons.wikimedia.org/wiki/File:Mercedes-Benz_SLS_AMG.ogg" target="_blank">Edvvc</a>,
+            <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank">CC BY-SA 3.0</a>, via Wikimedia
+            Commons
+        </figure>
+
+    </main>
+
+    <hr>
+    <!-- längst ner på varje sida ska ditt namn finnas omslutet av lämpligt html element -->
+    <footer>&copy; 2024 Daniel Thörnsjö</footer>
+
+</body>
+
+</html>
