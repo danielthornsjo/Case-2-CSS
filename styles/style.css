@@ -1,36 +1,84 @@
-/* Theming */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
-
-:root {
-    --white: #f9f9f9;
-    --black: #36383F;
-    --grey: #85888C;
-}
-
-/* ----- ROOT RESET ----- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    background-color: var(--white);
-    font-family: "Poppins", sans-serif;
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-a {
-    text-decoration: none;
+h1 {
+    width: 100%;
+    margin: 1rem 0 0 1rem;
+}
+
+.card {
+    width: 100%;
+    border: 1px solid black;
+    padding: 0.8rem;
+    border-radius: 0.8rem;
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h2,
+h3 {
+    width: 100%;
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+img,
+audio,
+iframe,
+video {
+    object-fit: contain;
+    width: 100%;
+}
+
+figcaption {
+    margin: 1rem 0 0 0;
 }
 
 ul {
-    list-style: none;
+    width: 100%;
 }
+
+ul li {
+    margin: 0 1.5rem;
+}
+
+p {
+    margin: 0 0 1rem 0;
+}
+
+
+
+h2.heading {
+    margin: 0 rem;
+}
+
+.source {
+    font-weight: bold;
+}
+
+#application,
+textarea {
+    width: 100%;
+    height: 100%;
+}
+
+
+
 
 /* ----- HEADER ------ */
 header {
-    background-color: var(--black);
-    box-shadow: 1px 1px 5px 0px var(--grey);
+    background-color: gray;
+    box-shadow: 1px 1px 5px 0px gray;
     position: sticky;
     top: 0;
     width: 100%;
@@ -43,7 +91,7 @@ header {
 /* Logo */
 .logo {
     display: inline-block;
-    color: var(--white);
+    color: white;
     font-size: 1.5rem;
     padding: 0 20px;
 }
@@ -53,18 +101,18 @@ header {
     width: 100%;
     height: 100%;
     position: fixed;
-    background-color: var(--black);
+    background-color: black;
     overflow: hidden;
 }
 
 .menu a {
     display: block;
     padding: 30px;
-    color: var(--white);
+    color: white;
 }
 
 .menu a:hover {
-    background-color: var(--grey);
+    background-color: gray;
 }
 
 .nav {
@@ -80,7 +128,7 @@ header {
 
 
 .hamb-line {
-    background: var(--white);
+    background: white;
     display: block;
     height: 5px;
     position: relative;
@@ -91,7 +139,7 @@ header {
 
 .hamb-line::before,
 .hamb-line::after {
-    background: var(--white);
+    background: white;
     content: '';
     display: block;
     height: 100%;
@@ -111,7 +159,7 @@ header {
 /* Toggle menu icon */
 .side-menu:checked~nav {
     max-height: 350px;
-    top: 60px
+    top: 80px
 }
 
 .side-menu:checked~.hamb .hamb-line {
@@ -130,39 +178,4 @@ header {
 
 .side-menu {
     display: none;
-}
-
-
-/* ----- RESPONSIVE ----- */
-
-@media (min-width: 836px) {
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 80px;
-        padding: 0 2rem;
-    }
-
-    .nav {
-        max-height: none;
-        top: 0;
-        position: relative;
-        float: right;
-        width: fit-content;
-        background-color: transparent;
-    }
-
-    .menu li {
-        float: left;
-    }
-
-    .menu a:hover {
-        background-color: transparent;
-        color: var(--grey);
-    }
-
-    .hamb {
-        display: none;
-    }
 }

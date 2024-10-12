@@ -7,19 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico?">
     <title>Media</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
 
-    <hr>
-    <nav>
-        <!-- meny för navigering mellan sidor -->
-        <a href="index.html">Start</a> |
-        <a href="city_page.html">Läs om Bangkok</a> |
-        <a href="media.html">Media</a> |
-        <a href="event.html">Defqon 1 Anmälan</a>
-    </nav>
-    <hr>
+    <!-- -----HEADER----- -->
+    <header>
+        <a href="#" class="logo">D. Thörnsjö</a>
+        <input type="checkbox" class="side-menu" id="side-menu">
+        <label for="side-menu" class="hamb">
+            <span class="hamb-line"></span>
+        </label>
+        <nav class="nav">
+            <!-- Navigation between pages -->
+            <ul class="menu">
+                <li><a href="index.html">Start</a></li>
+                <li><a href="city_page.html">Läs om Bangkok</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="event.html">Defqon 1 Anmälan</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main>
         <!-- sidans innehåll -->
@@ -27,44 +36,51 @@
 
         <!-- w3c validator klagar på dubbla figcaptions i figure -->
         <!-- Tog bort figcaption nummer 2 och satte radbrytning -->
-        <figure>
+        <figure class="card">
             <figcaption>En hemmamatch för Färjestad</figcaption>
             <img src="images/farjestad.jpg" alt="Färjestad hemmamatch" width="300">
-            <br>
-            <a href="https://commons.wikimedia.org/wiki/file:Seareiros_do_F%C3%A4rjestad_BK.jpg" target="_blank">Bene
-                Riobó</a>,
-            <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>, via Wikimedia
-            Commons
+            <p class="source">
+                <a href="https://commons.wikimedia.org/wiki/file:Seareiros_do_F%C3%A4rjestad_BK.jpg"
+                    target="_blank">Bene
+                    Riobó</a>,
+                <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>, via Wikimedia
+                Commons
+            </p>
         </figure>
 
-        <figure>
+        <figure class="card">
             <figcaption>F1 - Lewis Hamilton | Still Rising</figcaption>
             <iframe
                 src="https://player.vimeo.com/video/479934033?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
                 width="300" height="169" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
                 title="F1 - Lewis Hamilton | Still Rising">
             </iframe>
-            <br>
-            <a href="https://vimeo.com/479934033" target="_blank">F1 - Lewis Hamilton | Still Rising</a>, via Vimeo
+            <p class="source">
+                <a href="https://vimeo.com/479934033" target="_blank">F1 - Lewis Hamilton | Still Rising</a>, via Vimeo
+            </p>
         </figure>
 
-        <figure>
+        <figure class="card">
             <figcaption>Ducati Scrambler</figcaption>
             <video src="https://upload.wikimedia.org/wikipedia/commons/7/7b/The_Land_of_Joy.webm" controls
                 width="300"></video>
-            <br>
-            <a href="https://commons.wikimedia.org/wiki/File:The_Land_of_Joy.webm" target="_blank">Scrambler Ducati</a>,
-            <a href="https://creativecommons.org/licenses/by/3.0" target="_blank">CC BY 3.0</a>, via Wikimedia Commons
+            <p class="source">
+                <a href="https://commons.wikimedia.org/wiki/File:The_Land_of_Joy.webm" target="_blank">Scrambler
+                    Ducati</a>,
+                <a href="https://creativecommons.org/licenses/by/3.0" target="_blank">CC BY 3.0</a>, via Wikimedia
+                Commons
+            </p>
         </figure>
 
-        <figure>
+        <figure class="card">
             <figcaption>Mercedes-Benz SLS AMG</figcaption>
             <!-- Audio verkar ej fungera i Safari, oklart varför -->
             <audio src="audios/mercedes.ogg" controls></audio>
-            <br>
-            <a href="https://commons.wikimedia.org/wiki/File:Mercedes-Benz_SLS_AMG.ogg" target="_blank">Edvvc</a>,
-            <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank">CC BY-SA 3.0</a>, via Wikimedia
-            Commons
+            <p class="source">
+                <a href="https://commons.wikimedia.org/wiki/File:Mercedes-Benz_SLS_AMG.ogg" target="_blank">Edvvc</a>,
+                <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank">CC BY-SA 3.0</a>, via Wikimedia
+                Commons
+            </p>
         </figure>
 
     </main>
