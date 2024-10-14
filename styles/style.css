@@ -4,77 +4,6 @@
     box-sizing: border-box;
 }
 
-main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-h1 {
-    width: 100%;
-    margin: 1rem 0 0 1rem;
-}
-
-.card {
-    width: 100%;
-    border: 1px solid black;
-    padding: 0.8rem;
-    border-radius: 0.8rem;
-    margin: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-h2,
-h3 {
-    width: 100%;
-    margin: 0.5rem 0 0.5rem 0;
-}
-
-img,
-audio,
-iframe,
-video {
-    object-fit: contain;
-    width: 100%;
-}
-
-figcaption {
-    margin: 1rem 0 0 0;
-}
-
-ul {
-    width: 100%;
-}
-
-ul li {
-    margin: 0 1.5rem;
-}
-
-p {
-    margin: 0 0 1rem 0;
-}
-
-
-
-h2.heading {
-    margin: 0 rem;
-}
-
-.source {
-    font-weight: bold;
-}
-
-#application,
-textarea {
-    width: 100%;
-    height: 100%;
-}
-
-
-
-
 /* ----- HEADER ------ */
 header {
     background-color: gray;
@@ -178,4 +107,156 @@ header {
 
 .side-menu {
     display: none;
+}
+
+/* ----- MAIN CONTENT ----- */
+main {
+    height: calc(100vh - 192px);
+}
+
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    margin: 1rem 0 0 0;
+}
+
+.card {
+    width: 90%;
+    padding: 0.8rem;
+    border-radius: 0.8rem;
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 10px;
+}
+
+h2,
+h3 {
+    width: 100%;
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+img,
+audio,
+iframe,
+video {
+    object-fit: contain;
+    width: 100%;
+}
+
+figure figcaption {
+    margin: 1rem 0 0 0;
+    width: 100%;
+    text-align: center;
+}
+
+ul {
+    width: 100%;
+}
+
+ul li {
+    margin: 0 1.5rem;
+}
+
+p {
+    margin: 0 0 1rem 0;
+}
+
+form#application,
+form textarea {
+    width: 100%;
+    height: 100%;
+}
+
+/* ----- FOOTER ----- */
+footer {
+    background-color: rgb(54, 56, 63);
+    width: 100%;
+    height: 80px;
+    margin: 2rem 0px 0px;
+    color: white;
+    padding: 1.4rem;
+
+}
+
+/* ----- DESKTOP VIEW ----- */
+@media screen and (min-width: 500px) {
+    body {
+        position: relative;
+    }
+
+    #content {
+        gap: 2rem;
+        align-items: flex-start;
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    .card {
+        margin: 0;
+        order: 1;
+        width: calc(50% - 1rem);
+        margin: 0;
+        justify-content: flex-start;
+        align-content: flex-start;
+    }
+
+    .card.info {
+        order: 0;
+        width: 100%;
+    }
+
+    h1 {
+        margin: 2rem 0 0 0;
+        text-align: left;
+    }
+
+    .card.info .source {
+        width: 100%;
+    }
+
+    .card.image,
+    .card.text {
+        height: 550px;
+    }
+
+    figure.bangkok {
+        order: 0;
+        height: 372px;
+    }
+
+
+    .card.text.map iframe {
+        height: 90%
+    }
+
+    table.card.info.table {
+        width: calc(50% - 1rem);
+        height: 372px;
+
+    }
+
+    article.card.info {
+        order: 0;
+    }
+
+    footer {
+        width: 100%;
+        text-align: left;
+        position: relative;
+        bottom: 0;
+    }
+
+    footer .copyright {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+
 }
