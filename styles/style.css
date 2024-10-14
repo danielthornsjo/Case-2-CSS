@@ -32,20 +32,18 @@ header {
     position: fixed;
     background-color: black;
     overflow: hidden;
+    max-height: 0;
 }
 
 .menu a {
     display: block;
-    padding: 30px;
+    padding: 2rem;
     color: white;
+
 }
 
 .menu a:hover {
     background-color: gray;
-}
-
-.nav {
-    max-height: 0px;
 }
 
 /* Menu Icon */
@@ -63,7 +61,7 @@ header {
     position: relative;
     width: 30px;
     border-radius: 20%;
-    transition: all .2s ease-in-out;
+    transition: all .4s ease-in-out;
 }
 
 .hamb-line::before,
@@ -87,8 +85,9 @@ header {
 
 /* Toggle menu icon */
 .side-menu:checked~nav {
-    max-height: 350px;
-    top: 80px
+    max-height: 330px;
+    top: 80px;
+    transition: all 400ms ease;
 }
 
 .side-menu:checked~.hamb .hamb-line {
@@ -110,9 +109,6 @@ header {
 }
 
 /* ----- MAIN CONTENT ----- */
-main {
-    height: calc(100vh - 192px);
-}
 
 #content {
     display: flex;
@@ -148,6 +144,7 @@ iframe,
 video {
     object-fit: contain;
     width: 100%;
+    border: none;
 }
 
 figure figcaption {
@@ -182,13 +179,12 @@ footer {
     margin: 2rem 0px 0px;
     color: white;
     padding: 1.4rem;
-
 }
 
 /* ----- DESKTOP VIEW ----- */
 @media screen and (min-width: 500px) {
     body {
-        position: relative;
+        margin-bottom: 200px;
     }
 
     #content {
@@ -197,6 +193,11 @@ footer {
         width: 1000px;
         margin: 0 auto;
     }
+
+    .hamb {
+        /* display: none; */
+    }
+
 
     .card {
         margin: 0;
@@ -246,17 +247,37 @@ footer {
         order: 0;
     }
 
+    .card.media {
+        height: 400px;
+
+        iframe {
+            height: 80%;
+            border: none;
+        }
+    }
+
+    .card.media.movie {
+        height: 600px;
+
+        .aftermovie {
+            height: 90%;
+        }
+    }
+
+    .card.form {
+        width: 100%;
+    }
+
     footer {
+        position: fixed;
+        bottom: 0;
         width: 100%;
         text-align: left;
-        position: relative;
-        bottom: 0;
+        align-content: center;
     }
 
     footer .copyright {
         width: 1000px;
         margin: 0 auto;
     }
-
-
 }
