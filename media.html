@@ -14,86 +14,74 @@
 
     <!-- -----HEADER----- -->
     <header>
-        <a href="#" class="logo">D. Thörnsjö</a>
-        <input type="checkbox" class="side-menu" id="side-menu">
-        <label for="side-menu" class="hamb">
-            <span class="hamb-line"></span>
-        </label>
-        <nav class="nav">
-            <!-- Navigation between pages -->
-            <ul class="menu">
-                <li><a href="index.html">Start</a></li>
-                <li><a href="city_page.html">Läs om Bangkok</a></li>
-                <li class="active-page"><a href="media.html">Media</a></li>
-                <li><a href="event.html">Defqon 1 Anmälan</a></li>
-            </ul>
-        </nav>
+        <div class="nav-menu">
+            <a href="#" class="logo">D. Thörnsjö</a>
+            <input type="checkbox" class="side-menu" id="side-menu">
+            <label for="side-menu" class="hamb">
+                <span class="hamb-line"></span>
+            </label>
+            <nav class="nav">
+                <!-- Navigation between pages -->
+                <ul class="menu">
+                    <li class="active-page"><a href="index.html">Start</a></li>
+                    <li><a href="city_page.html">Läs om Bangkok</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="event.html">Defqon 1 Anmälan</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <div id="content">
-            <!-- sidans innehåll -->
-            <h1>Media</h1>
+        <!-- sidans innehåll -->
+        <h1>Media</h1>
 
-            <!-- w3c validator klagar på dubbla figcaptions i figure -->
-            <!-- Tog bort figcaption nummer 2 och satte radbrytning -->
-            <figure class="card media">
-                <figcaption>En hemmamatch för Färjestad</figcaption>
-                <img src="images/farjestad.jpg" alt="Färjestad hemmamatch" width="300">
-                <p class="source">
-                    <a href="https://commons.wikimedia.org/wiki/file:Seareiros_do_F%C3%A4rjestad_BK.jpg"
-                        target="_blank">Bene
-                        Riobó</a>,
-                    <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>, via
-                    Wikimedia
-                    Commons
-                </p>
-            </figure>
+        <!-- w3c validator klagar på dubbla figcaptions i figure -->
+        <!-- Tog bort figcaption nummer 2 och satte radbrytning -->
+        <figure class="card half-span-left source">
+            <figcaption>En hemmamatch för Färjestad</figcaption>
+            <img src="images/farjestad.jpg" alt="Färjestad hemmamatch" width="300">
+            <br>
+            <a href="https://commons.wikimedia.org/wiki/file:Seareiros_do_F%C3%A4rjestad_BK.jpg" target="_blank">Bene
+                Riobó</a>,
+            <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>, via Wikimedia
+            Commons
+        </figure>
 
-            <figure class="card media">
-                <figcaption>F1 - Lewis Hamilton | Still Rising</figcaption>
-                <iframe
+        <figure class="card half-span-right source">
+            <figcaption>F1 - Lewis Hamilton | Still Rising</figcaption>
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe
                     src="https://player.vimeo.com/video/479934033?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                    width="300" height="169" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-                    title="F1 - Lewis Hamilton | Still Rising">
-                </iframe>
-                <p class="source">
-                    <a href="https://vimeo.com/479934033" target="_blank">F1 - Lewis Hamilton | Still Rising</a>, via
-                    Vimeo
-                </p>
-            </figure>
+                    frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                    style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                    title="F1 - Lewis Hamilton | Still Rising"></iframe></div>
+            <script src="https://player.vimeo.com/api/player.js"></script>
+            <br>
+            <a href="https://vimeo.com/479934033" target="_blank">F1 - Lewis Hamilton | Still Rising</a>, via Vimeo
+        </figure>
 
-            <figure class="card media">
-                <figcaption>Ducati Scrambler</figcaption>
-                <video src="https://upload.wikimedia.org/wikipedia/commons/7/7b/The_Land_of_Joy.webm" controls
-                    width="300"></video>
-                <p class="source">
-                    <a href="https://commons.wikimedia.org/wiki/File:The_Land_of_Joy.webm" target="_blank">Scrambler
-                        Ducati</a>,
-                    <a href="https://creativecommons.org/licenses/by/3.0" target="_blank">CC BY 3.0</a>, via Wikimedia
-                    Commons
-                </p>
-            </figure>
+        <figure class="card half-span-left source">
+            <figcaption>Ducati Scrambler</figcaption>
+            <video src="https://upload.wikimedia.org/wikipedia/commons/7/7b/The_Land_of_Joy.webm" controls
+                width="300"></video>
+            <br>
+            <a href="https://commons.wikimedia.org/wiki/File:The_Land_of_Joy.webm" target="_blank">Scrambler Ducati</a>,
+            <a href="https://creativecommons.org/licenses/by/3.0" target="_blank">CC BY 3.0</a>, via Wikimedia Commons
+        </figure>
 
-            <figure class="card media">
-                <figcaption>Mercedes-Benz SLS AMG</figcaption>
-                <!-- Audio verkar ej fungera i Safari, oklart varför -->
-                <audio src="audios/mercedes.ogg" controls></audio>
-                <p class="source">
-                    <a href="https://commons.wikimedia.org/wiki/File:Mercedes-Benz_SLS_AMG.ogg"
-                        target="_blank">Edvvc</a>,
-                    <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank">CC BY-SA 3.0</a>, via
-                    Wikimedia
-                    Commons
-                </p>
-            </figure>
-        </div>
+        <figure class="card half-span-right source">
+            <figcaption>Mercedes-Benz SLS AMG</figcaption>
+            <!-- Audio verkar ej fungera i Safari, oklart varför -->
+            <audio src="audios/mercedes.ogg" controls></audio>
+            <br>
+            <a href="https://commons.wikimedia.org/wiki/File:Mercedes-Benz_SLS_AMG.ogg" target="_blank">Edvvc</a>,
+            <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank">CC BY-SA 3.0</a>, via Wikimedia
+            Commons
+        </figure>
+
     </main>
-
     <!-- längst ner på varje sida ska ditt namn finnas omslutet av lämpligt html element -->
-    <footer>
-        <div class="copyright">&copy; 2024 Daniel Thörnsjö</div>
-    </footer>
+    <footer>&copy; 2024 Daniel Thörnsjö</footer>
 
 </body>
 
