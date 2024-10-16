@@ -15,7 +15,6 @@
 
 <body>
 
-
     <!-- -----HEADER----- -->
     <header>
         <div class="nav-menu">
@@ -30,15 +29,14 @@
                     <li class="active-page"><a href="index.html">Start</a></li>
                     <li><a href="city_page.html">Läs om Bangkok</a></li>
                     <li><a href="media.html">Media</a></li>
-                    <li><a href="event.html">Defqon 1 Anmälan</a></li>
+                    <li><a class="active" href="event.html">Defqon.1 Anmälan</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
+    <!-- sidans innehåll -->
     <main>
-        <!-- sidans innehåll -->
-        <h1>Defqon.1</h1>
         <figure class="card full-span background-defqon">
             <a href="#application" class="application-link border">Gå direkt till anmälan</a>
         </figure>
@@ -133,13 +131,14 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </figure>
-
-
-
     </main>
 
     <!-- längst ner på varje sida ska ditt namn finnas omslutet av lämpligt html element -->
-    <footer>&copy; 2024 Daniel Thörnsjö</footer>
+    <footer>
+        <div class="copyright">
+            &copy; 2024 Daniel Thörnsjö
+        </div>
+    </footer>
 
 </body>
 
