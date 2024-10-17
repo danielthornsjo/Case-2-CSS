@@ -15,7 +15,7 @@ body {
     margin-bottom: 120px;
     background-color: var(--bg-color);
     font-family: 'Open Sans';
-    font-weight: 500;
+    font-weight: 400;
 }
 
 a {
@@ -41,11 +41,6 @@ iframe {
     height: 90%;
 }
 
-h2,
-h3 {
-    width: 90%;
-}
-
 /* ---- NAVIGATION ---- */
 header {
     background-color: var(--secondary-color);
@@ -54,7 +49,7 @@ header {
     top: 0;
     width: 100%;
     height: auto;
-    z-index: 1;
+    z-index: 10;
 }
 
 .nav-menu {
@@ -181,21 +176,15 @@ main {
     gap: 2rem;
 }
 
-ul {
+ul li ul {
     padding: 0 1rem;
 }
 
-
-figcaption {
-    text-align: center;
-}
-
-th,
+table th,
 td {
-    text-align: center;
-    width: 10%;
-    border: 1px solid black;
+    margin: 0 auto;
     padding: .5rem;
+    text-align: left;
 }
 
 
@@ -232,10 +221,8 @@ div.card.half-span-right ul>li>ol {
 
 .card.half-span-left.background-me {
     background-image: url("/images/me.jpeg");
-    height: 392px;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+    height: 400px;
+    background-size: cover;
     display: flex;
     justify-content: center;
 }
@@ -353,13 +340,195 @@ div.image-list {
     display: none;
 }
 
+div.flags {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+div.flag-info {
+    width: 100%;
+    height: 200px;
+    margin: 2rem 0;
+    border: 1px solid #b5b5b5;
+}
+
+div.usa {
+    width: 400px;
+    height: 200px;
+    background: rgb(179, 25, 66);
+    background: linear-gradient(0deg, rgba(179, 25, 66, 1) 8%, rgba(255, 255, 255, 1) 8%, rgba(255, 255, 255, 1) 16%, rgba(179, 25, 66, 1) 16%, rgba(179, 25, 66, 1) 24%, rgba(255, 255, 255, 1) 24%, rgba(255, 255, 255, 1) 31%, rgba(179, 25, 66, 1) 31%, rgba(179, 25, 66, 1) 39%, rgba(255, 255, 255, 1) 39%, rgba(255, 255, 255, 1) 46%, rgba(179, 25, 66, 1) 46%, rgba(179, 25, 66, 1) 54%, rgba(255, 255, 255, 1) 54%, rgba(255, 255, 255, 1) 61%, rgba(179, 25, 66, 1) 61%, rgba(179, 25, 66, 1) 69%, rgba(255, 255, 255, 1) 69%, rgba(255, 255, 255, 1) 76%, rgba(179, 25, 66, 1) 76%, rgba(179, 25, 66, 1) 84%, rgba(255, 255, 255, 1) 84%, rgba(255, 255, 255, 1) 92%, rgba(179, 25, 66, 1) 92%, rgba(179, 25, 66, 1) 100%);
+    position: relative;
+    box-shadow: 0 6px 12px 5px rgba(0, 0, 0, 0.24);
+    border: 2px solid black;
+}
+
+.blue-square {
+    width: 40%;
+    height: 54%;
+    background-color: #0a3161;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+div.six-star {
+    display: flex;
+    justify-content: space-around;
+    height: 10%;
+    position: relative;
+    bottom: 0.2rem
+}
+
+div.five-star {
+    display: flex;
+    justify-content: space-around;
+    height: 10%;
+    width: 85%;
+    margin: auto;
+    position: relative;
+    bottom: 0.2rem
+}
+
+div.star {
+    color: white;
+}
+
+div.uk {
+    background-color: #23305d;
+    width: 400px;
+    height: 200px;
+    position: relative;
+    box-shadow: 0 6px 12px 5px rgba(0, 0, 0, 0.24);
+    border: 2px solid black;
+    overflow: hidden;
+    opacity: 100%;
+}
+
+.red-horizontal {
+    background-color: #c8142f;
+    width: 101%;
+    height: 20%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.red-vertical {
+    background-color: #c8142f;
+    height: 200px;
+    width: 12%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.white-box-up-left {
+    width: 50%;
+    height: 98px;
+    border: 15px solid #ffffff;
+    position: absolute;
+    top: -18px;
+    left: -19.5px;
+    z-index: 1;
+}
+
+.white-box-up-right {
+    width: 50%;
+    height: 98px;
+    border: 15px solid #ffffff;
+    position: absolute;
+    right: -20px;
+    top: -18px;
+    z-index: 1;
+}
+
+.white-box-down-left {
+    width: 50%;
+    height: 98px;
+    border: 15px solid #ffffff;
+    position: absolute;
+    right: -20px;
+    bottom: -17px;
+    z-index: 1;
+}
+
+.white-box-down-right {
+    width: 50%;
+    height: 98px;
+    border: 15px solid #ffffff;
+    position: absolute;
+    left: -19px;
+    bottom: -17px;
+    z-index: 1;
+}
+
+.white-cross-up-down {
+    background-color: #ffffff;
+    width: 460px;
+    height: 20%;
+    position: absolute;
+    transform: rotate(26.5deg);
+    left: -30px;
+    top: 40%;
+}
+
+.white-cross-down-up {
+    background-color: #ffffff;
+    width: 460px;
+    height: 20%;
+    position: absolute;
+    top: 40%;
+    left: -30px;
+    transform: rotate(-26.5deg);
+}
+
+.red-line-up-left {
+    background-color: #c8142f;
+    width: 160px;
+    height: 33%;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+}
+
+.red-line-up-right {
+    background-color: #c8142f;
+    width: 160px;
+    height: 33%;
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+}
+
+.red-line-down-left {
+    background-color: #c8142f;
+    width: 180px;
+    height: 33%;
+    position: absolute;
+    top: 20px;
+    left: 5px;
+}
+
+.red-line-down-right {
+    background-color: #c8142f;
+    width: 180px;
+    height: 33%;
+    position: absolute;
+    bottom: 20px;
+    right: 5px;
+}
 
 /* ---- FOOTER ---- */
 footer {
     width: 100%;
     background-color: var(--secondary-color);
     color: var(--link-color);
-    padding: 2rem;
+    padding: .5rem;
     position: fixed;
     bottom: 0;
 }
@@ -417,7 +586,8 @@ footer {
         width: 100%;
     }
 
-    .source {
+    .source,
+    figcaption {
         text-align: center;
     }
 
@@ -514,6 +684,8 @@ footer {
         overflow: hidden;
         transition: max-height .25s ease-in-out;
         border-radius: 0 0 .75rem .75rem;
+        position: relative;
+        z-index: 9;
     }
 
     div.gallery .image-list img {
@@ -526,7 +698,7 @@ footer {
     div.gallery div.image-list img:hover {
         transform: scale(1.5);
         transition: .2s;
-        box-shadow: 0 0 5px 5px var(--link-active-color);
+        box-shadow: 0 6px 12px 5px rgba(0, 0, 0, 0.24);
     }
 
     div.gallery input[type="checkbox"] {
@@ -560,13 +732,27 @@ footer {
         overflow: visible;
     }
 
+    div.flags {
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: .5em;
+        width: 100%;
+    }
+
+    div.flag-info {
+        height: 200px;
+        width: 40%;
+        align-content: center;
+        border: 1px solid #b5b5b5;
+    }
+
     footer {
-        padding: 2rem;
+        padding: .75rem;
         margin: 0 auto;
     }
 
     .copyright {
-        font-size: 1.2rem;
+        font-size: 1rem;
         width: 1000px;
         margin: 0 auto;
     }
