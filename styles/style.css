@@ -378,7 +378,7 @@ div.six-star {
     justify-content: space-around;
     height: 10%;
     position: relative;
-    bottom: 0.1rem;
+    bottom: 0.3rem;
 }
 
 div.five-star {
@@ -388,14 +388,14 @@ div.five-star {
     width: 85%;
     margin: auto;
     position: relative;
-    bottom: 0.1rem;
+    bottom: 0.3rem;
 }
 
 div.star {
     color: white;
     margin: auto;
     /* Maybe need to use scale to get stars correct size, depends on device */
-    transform: scale(.7);
+    /* transform: scale(.7); */
 }
 
 /* UK flag */
@@ -547,39 +547,39 @@ div.uk {
 .triangle {
     width: 0;
     height: 0;
-    border-top: 100px solid transparent;
-    border-bottom: 100px solid transparent;
+    border-top: 90px solid transparent;
+    border-bottom: 90px solid transparent;
     position: absolute;
 }
 
 .jamaica-left {
-    border-left: 200px solid #231f20;
+    border-left: 180px solid #231f20;
     top: 50%;
     transform: translate(0, -50%);
 }
 
 .jamaica-right {
-    border-right: 200px solid #231f20;
+    border-right: 180px solid #231f20;
     right: 0;
 }
 
 .yellow-line-left {
     background-color: #fef200;
     width: 25px;
-    height: 450px;
-    transform: rotate(-64deg);
+    height: 470px;
+    transform: rotate(-61deg);
     position: absolute;
-    top: -125px;
+    top: -120px;
     left: 190px
 }
 
 .yellow-line-right {
     background-color: #fef200;
     width: 25px;
-    height: 450px;
-    transform: rotate(64deg);
+    height: 470px;
+    transform: rotate(61deg);
     position: absolute;
-    top: -125px;
+    top: -120px;
     right: 190px;
 }
 
@@ -789,6 +789,28 @@ footer {
     div.six-star,
     div.five-star {
         bottom: 0.4rem;
+    }
+
+    .jamaica-left {
+        border-left: 200px solid #231f20;
+    }
+
+    .jamaica-right {
+        border-right: 200px solid #231f20;
+    }
+
+    .yellow-line-left {
+        height: 450px;
+        transform: rotate(-64deg);
+        top: -125px;
+        left: 190px
+    }
+
+    .yellow-line-right {
+        height: 450px;
+        transform: rotate(64deg);
+        top: -125px;
+        right: 190px;
     }
 
     /* ---- FOOTER ---- */
