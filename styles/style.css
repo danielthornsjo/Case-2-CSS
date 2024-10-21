@@ -22,6 +22,10 @@ a {
     text-decoration: none;
 }
 
+article {
+    margin-top: 3.5rem;
+}
+
 p {
     margin: 1rem 0;
 }
@@ -250,10 +254,6 @@ td {
     box-shadow: 0 5px 4px 0 rgb(214, 214, 214);
 }
 
-.space {
-    margin-top: 3.5rem;
-}
-
 /* Styling form, event page */
 a.application-link {
     text-align: center;
@@ -315,6 +315,7 @@ div.gallery .image-list img {
 }
 
 div.image-list {
+    margin-top: 4rem;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -618,7 +619,7 @@ footer {
         margin: 0 auto;
     }
 
-    a.logo {
+    div.logo {
         padding: 0;
     }
 

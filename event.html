@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personlig hemsida. Uppgift från skolan i modul CSS">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Webbutveckling, Front-end, Back-end">
+    <meta name="author" content="Daniel Thörnsjö">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico?">
     <title>Defqon.1 - Anmälan</title>
     <link rel="stylesheet" href="styles/style.css">
@@ -17,7 +20,7 @@
     <!-- -----HEADER----- -->
     <header>
         <div class="nav-menu">
-            <a href="/index.html" class="logo">D. Thörnsjö</a>
+            <div class="logo">D. Thörnsjö</div>
             <input type="checkbox" class="side-menu" id="side-menu">
             <label for="side-menu" class="hamb">
                 <span class="hamb-line"></span>
@@ -40,9 +43,9 @@
         <figure class="card full-span background-defqon">
             <a href="#application" class="application-link border">Gå direkt till anmälan</a>
         </figure>
-        <article class="card full-span">
-            <h3 class="border">Om Defqon.1</h3>
-            <blockquote class="space">
+        <div class="card full-span">
+            <article>
+                <h3 class="border">Om Defqon.1</h3>
                 <p>
                     När du diskuterar hardstyle och festivaler är det ingen som kan undvika den största av de alla -
                     Defqon.1 festival. Detta är moderskeppet av alla festivaler och helt enkelt ett måste att besöka för
@@ -58,70 +61,73 @@
                     campingen, de maginifika scenerna, musiken och såklart - alla underbara ravers du träffar. Det finns
                     många festivaler att välja på, men det är något väldigt speciellt med just Defqon.1.
                 </p>
-            </blockquote>
-            <p>
-                <q>Artikel från <a href="https://coretours.se/product/defqon-1-2024/" target="_blank">Coretours</a></q>
-            </p>
-        </article>
+                <p>
+                    <q>Artikel från <a href="https://coretours.se/product/defqon-1-2024/"
+                            target="_blank">Coretours</a></q>
+                </p>
+            </article>
+        </div>
 
         <form id="application" class="card four-grid-span-left" action="#" method="get">
-            <h3 class="border">Anmälan till Defqon.1 2025</h3>
+            <article>
+                <h3 class="border">Anmälan till Defqon.1 2025</h3>
 
-            <p class="space">
-                <label for="name">Ange ditt namn</label>
+                <p>
+                    <label for="name">Ange ditt namn</label>
+                    <br>
+                    <input type="text" name="name" id="name" placeholder="För- och efternamn" required>
+                </p>
+
+                <p>
+                    <label for="email">E-post</label>
+                    <br>
+                    <input type="email" id="email" name="email" placeholder="Ex email@domain.se" required>
+                </p>
+
+                <!-- w3c klagar på paragraph runt ett fieldset -->
+                <!-- fieldset är ett blockelement, br för radbrytning -->
+                <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset#styling_with_css -->
+                <fieldset>
+                    <legend>Ange vilka datum du vill deltaga</legend>
+                    <input type="checkbox" name="june26" id="june26">
+                    <label for="june26">26 juni</label>
+                    <br>
+                    <input type="checkbox" name="june27" id="june27">
+                    <label for="june27">27 juni</label>
+                    <br>
+                    <input type="checkbox" name="june28" id="june28">
+                    <label for="june28">28 juni</label>
+                    <br>
+                    <input type="checkbox" name="june29" id="june29">
+                    <label for="june29">29 juni</label>
+                </fieldset>
                 <br>
-                <input type="text" name="name" id="name" placeholder="För- och efternamn" required>
-            </p>
+                <fieldset>
+                    <legend>Hur vill du bo under eventet?</legend>
+                    <input type="radio" name="accommodation" id="tent" value="tent" checked><label
+                        for="tent">Tält</label>
+                    <input type="radio" name="accommodation" id="cabin" value="cabin"><label for="cabin">Stuga</label>
+                    <input type="radio" name="accommodation" id="hotel" value="hotel"><label for="hotel">Hotell</label>
+                </fieldset>
 
-            <p>
-                <label for="email">E-post</label>
-                <br>
-                <input type="email" id="email" name="email" placeholder="Ex email@domain.se" required>
-            </p>
+                <p>
+                    <label for="food">Välj matpaket:</label>
+                    <select name="food" id="food">
+                        <option value="breakfast">Endast frukost</option>
+                        <option value="half-board">Halvpension</option>
+                        <option value="full-board">Helpension</option>
+                    </select>
+                </p>
 
-            <!-- w3c klagar på paragraph runt ett fieldset -->
-            <!-- fieldset är ett blockelement, br för radbrytning -->
-            <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset#styling_with_css -->
-            <fieldset>
-                <legend>Ange vilka datum du vill deltaga</legend>
-                <input type="checkbox" name="june26" id="june26">
-                <label for="june26">26 juni</label>
-                <br>
-                <input type="checkbox" name="june27" id="june27">
-                <label for="june27">27 juni</label>
-                <br>
-                <input type="checkbox" name="june28" id="june28">
-                <label for="june28">28 juni</label>
-                <br>
-                <input type="checkbox" name="june29" id="june29">
-                <label for="june29">29 juni</label>
-            </fieldset>
-            <br>
-            <fieldset>
-                <legend>Hur vill du bo under eventet?</legend>
-                <input type="radio" name="accommodation" id="tent" value="tent" checked><label for="tent">Tält</label>
-                <input type="radio" name="accommodation" id="cabin" value="cabin"><label for="cabin">Stuga</label>
-                <input type="radio" name="accommodation" id="hotel" value="hotel"><label for="hotel">Hotell</label>
-            </fieldset>
+                <p>
+                    <label for="letter">Något annat du vill tillägga?</label>
+                    <br>
+                    <textarea name="letter" id="letter"></textarea>
+                </p>
 
-            <p>
-                <label for="food">Välj matpaket:</label>
-                <select name="food" id="food">
-                    <option value="breakfast">Endast frukost</option>
-                    <option value="half-board">Halvpension</option>
-                    <option value="full-board">Helpension</option>
-                </select>
-            </p>
-
-            <p>
-                <label for="letter">Något annat du vill tillägga?</label>
-                <br>
-                <textarea name="letter" id="letter"></textarea>
-            </p>
-
-            <input type="submit" value="Skicka">
-            <input type="reset" value="Reset">
-
+                <input type="submit" value="Skicka">
+                <input type="reset" value="Reset">
+            </article>
         </form>
 
         <figure class="card six-grid-span-right">

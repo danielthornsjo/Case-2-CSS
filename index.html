@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personlig hemsida. Uppgift från skolan i modul CSS">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Webbutveckling, Front-end, Back-end">
+    <meta name="author" content="Daniel Thörnsjö">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico?">
     <title>Startsida</title>
     <link rel="stylesheet" href="styles/style.css">
@@ -16,7 +19,7 @@
     <!-- -----HEADER----- -->
     <header>
         <div class="nav-menu">
-            <a href="/../index.html" class="logo">D. Thörnsjö</a>
+            <div class="logo">D. Thörnsjö</div>
             <input type="checkbox" class="side-menu" id="side-menu">
             <label for="side-menu" class="hamb">
                 <span class="hamb-line"></span>
@@ -37,14 +40,16 @@
     <!-- sidans innehåll -->
     <main>
         <div class="card full-span fade-in-top">
-            <h3 class="border">Om mig</h3>
-            <p class="space">
-                <span>Hej!</span>
-                Jag heter Daniel och är 33 år och bor i Skövde med min fru och 2 barn.
-            </p>
-            <p>
-                Äger en kolonistuga på 25kvm som jag byggt upp själv från grunden.
-            </p>
+            <article>
+                <h3 class="border">Om mig</h3>
+                <p>
+                    <span>Hej!</span>
+                    Jag heter Daniel och är 33 år och bor i Skövde med min fru och 2 barn.
+                </p>
+                <p>
+                    Äger en kolonistuga på 25kvm som jag byggt upp själv från grunden.
+                </p>
+            </article>
         </div>
 
         <figure class="card half-span-left background-me fade-in-left">
@@ -52,24 +57,24 @@
         </figure>
 
         <div class="card half-span-right fade-in-right">
-            <h3 class="border">Mina intressen</h3>
-            <p class="space">
-            <ul>
-                <li>Åka skidor
-                    <ul>
-                        <li>Ställen jag varit på
-                            <ol>
-                                <li>Stöten</li>
-                                <li>Branäs</li>
-                                <li>Trysil</li>
-                                <li>Kläppen</li>
-                            </ol>
-                        </li>
-                    </ul>
-                <li>Åka motorcykel</li>
-                <li>Titta på ishockey och Formula 1</li>
-            </ul>
-            </p>
+            <article>
+                <h3 class="border">Mina intressen</h3>
+                <ul>
+                    <li>Åka skidor
+                        <ul>
+                            <li>Ställen jag varit på
+                                <ol>
+                                    <li>Stöten</li>
+                                    <li>Branäs</li>
+                                    <li>Trysil</li>
+                                    <li>Kläppen</li>
+                                </ol>
+                            </li>
+                        </ul>
+                    <li>Åka motorcykel</li>
+                    <li>Titta på ishockey och Formula 1</li>
+                </ul>
+            </article>
         </div>
     </main>
 
